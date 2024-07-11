@@ -1,8 +1,8 @@
-```
-npm install
-npm run dev
-```
+# Akutibu
 
-```
-npm run deploy
-```
+Add a live status to your personal website/blog
+
+![Client](screenshot/client.jpg)
+
+## How to use
+ Todo
