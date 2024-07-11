@@ -1,4 +1,4 @@
-name: client
+name: akutibu
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -30,11 +30,20 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_akutibu:
+    path: ./flutter_akutibu
+  moon_design:
+    git:
+      url: https://github.com/coingaming/moon_flutter.git
+      ref: main
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
+  tray_manager: ^0.2.3
+  dio: ^5.5.0+1
+  provider: ^6.1.2
 
 dev_dependencies:
   flutter_test:
