@@ -100,3 +100,10 @@ macos:
 	mv ${LIB_NAME}.dylib ../macos/${LIB_NAME}.dylib
 	rm ${LIB_NAME}_*.h
 	rm ${LIB_NAME}_*.dylib
+
+windows:
+	CGO_ENABLED=1 \
+	GOOS=windows \
+	GOARCH=amd64 \
+	go build  -buildmode=c-shared -o flutter_akutibu.dll .
+	mv flutter_akutibu*.dll ../windows/flutter_akutibu.dll
