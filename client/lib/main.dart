@@ -7,6 +7,7 @@ import 'package:moon_design/moon_design.dart';
 import 'package:provider/provider.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
